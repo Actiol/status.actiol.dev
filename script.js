@@ -35,6 +35,7 @@ class Service {
             return new Status(`${res.status}`, infoString);
         }
         catch (error) {
+            console.error(error);
             return new Status("ERR", `${error.message}`);
         }
     }

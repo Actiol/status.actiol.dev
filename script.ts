@@ -42,6 +42,7 @@ class Service {
             
 
         } catch (error: any) {
+            console.error(error)
             return new Status("ERR", `${error.message}`)
         }
     }
